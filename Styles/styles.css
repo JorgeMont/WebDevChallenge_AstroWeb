@@ -116,24 +116,67 @@ body main .app .app__info h2 {
 }
 body main .app .app__info .description {
   font-size: 18px;
-  width: 50%;
+  width: 60%;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid gray;
   text-align: justify;
 }
 body main .app .app__info .metrics {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 3rem;
 }
 body main .app .app__info .metrics span {
-  color: #D0D6F9;
+  color: #d0d6f9;
 }
 body main .app .app__info .metrics h3 {
   font-size: 28px;
   font-family: "Bellefair", serif;
   font-weight: 400;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 1080px) {
+  body main .app .app__info .description {
+    width: 80%;
+  }
+  body main .app .app__info .metrics {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  body main h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+  body main .app {
+    flex-direction: column;
+    padding: 3rem 2rem 0;
+  }
+  body main .app .app__image {
+    margin-bottom: 2rem;
+  }
+  body main .app .app__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  body main .app .app__info ul li {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    -moz-user-select: none;
+         user-select: none; /* Standard syntax */
+  }
+  body main .app .app__info .metrics {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  body main .app .app__info .metrics .metrics__distance {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -118,20 +118,18 @@ body {
       }
 
       .app__info {
-        flex: 1 1 0px; 
+        flex: 1 1 0px;
         ul {
           list-style: none;
           display: flex;
-          // justify-content: space-evenly;
-          // width: 50%;
-          .activeDest{
+          .activeDest {
             border-bottom: 2px solid white;
           }
-          li{
+          li {
             margin: 0 2rem;
             padding-bottom: 0.5rem;
 
-            &:hover{
+            &:hover {
               cursor: pointer;
               font-weight: 700;
             }
@@ -146,28 +144,90 @@ body {
 
         .description {
           font-size: 18px;
-          width: 50%;
+          width: 60%;
           padding-bottom: 2rem;
           margin-bottom: 1rem;
           border-bottom: 1px solid gray;
           text-align: justify;
         }
 
-        .metrics{
-          width: 50%;
+        .metrics {
+          width: 60%;
           display: flex;
           justify-content: space-around;
-          font-family: 'Barlow Condensed', sans-serif;
-
-          span{
-            color: #D0D6F9;
+          font-family: "Barlow Condensed", sans-serif;
+          margin-bottom: 3rem;
+          span {
+            color: #d0d6f9;
           }
 
-          h3{
+          h3 {
             font-size: 28px;
             font-family: "Bellefair", serif;
             font-weight: 400;
             margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    main {
+      .app {
+        .app__info {
+          .description {
+            width: 80%;
+          }
+
+          .metrics {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    main {
+      h1 {
+        text-align: center;
+        padding-left: 0;
+      }
+      .app {
+        flex-direction: column;
+        padding: 3rem 2rem 0;
+
+        .app__image {
+          margin-bottom: 2rem;
+        }
+
+        .app__info {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
+          ul {
+            li {
+              -webkit-user-select: none; /* Safari */
+              -ms-user-select: none; /* IE 10 and IE 11 */
+              user-select: none; /* Standard syntax */
+            }
+          }
+
+          .metrics {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            .metrics__distance {
+              margin-bottom: 1rem;
+            }
           }
         }
       }

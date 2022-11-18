@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../Assets/Images/background.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  background-color: #12151f;
+  /* opacity: 0.25; */
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+}
+
+.header__menu img{
+    width: 2rem;
+}

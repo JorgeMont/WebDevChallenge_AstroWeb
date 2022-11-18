@@ -26,6 +26,12 @@ body {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 16px;
 
+    .header__logo{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
     .header__menu {
       img {
         width: 2rem;
@@ -71,10 +77,8 @@ body {
       .menu-line{
         position: relative;
         display: flex;
-        // background-color: gray;
         top: 50%;
         right: 67%;
-        // height: 100%;
 
         img{
             width: 70%;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./Styles/styles.css" />
     <link
       rel="shortcut icon"
-      href="./Assets/Images/logo.svg"
+      href="./Images/logo.svg"
       type="image/x-icon"
     />
     <title>Beso Prueba</title>
@@ -15,11 +15,11 @@
   <body>
     <header>
       <div class="header__logo">
-        <img src="./Assets/Images/logo.svg" alt="logo" class="logo"/>
+        <img src="./Images/logo.svg" alt="logo" class="logo"/>
       </div>
       <!-- <nav class="header__menu">
         <div class="menu-line">
-            <img src="./Assets/Images/Rectangle.svg" alt="line">
+            <img src="./Images/Rectangle.svg" alt="line">
         </div>
         <ul>
           <li>
@@ -49,29 +49,33 @@
         <h1><span>01</span>PICK YOUR DESTINATION</h1>
         <section class="app">
             <div class="app__image">
-                <img src="./Assets/Images/moon.svg" alt="moon">
+                <!-- <img src="./Images/moon.svg" alt="moon"> -->
+                <img src="" alt="">
             </div>
             <div class="app__info">
                 <ul>
-                    <li class="activeDest">MOON</li>
-                    <li>MARS</li>
-                    <li>EUROPA</li>
-                    <li>TITAN</li>
+                    <li class="activeDest" id="moon">MOON</li>
+                    <li id="mars">MARS</li>
+                    <li id="europa">EUROPA</li>
+                    <li id="titan">TITAN</li>
                 </ul>
-                <h2>MOON</h2>
-                <p class="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <h2>Titulo</h2>
+                <p class="description">
+                  Descripcion
+                </p>
                 <div class="metrics">
                     <div class="metrics__distance">
                         <span>AVG. DISTANCE</span>
-                        <h3>384,400 KM</h3>
+                        <h3>distance in KM</h3>
                     </div>
                     <div class="metrics__time">
                         <span>EST. TRAVEL TIME</span>
-                        <h3>3 DAYS</h3>
+                        <h3>travel time</h3>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./JS/app.js"></script>
   </body>
 </html>

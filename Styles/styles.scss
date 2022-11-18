@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@100;400;700&family=Bellefair&display=swap");
 
 * {
   margin: 0;
@@ -8,10 +8,10 @@
 body {
   background-image: url("../Assets/Images/background.png");
   background-repeat: no-repeat;
-  mix-blend-mode: screen;
+  // mix-blend-mode: screen;
   background-color: #12151f;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,12 +26,12 @@ body {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 16px;
 
-    .header__logo{
-        &:hover{
-            cursor: pointer;
-        }
+    .header__logo {
+      &:hover {
+        cursor: pointer;
+      }
     }
-    
+
     .header__menu {
       img {
         width: 2rem;
@@ -74,14 +74,101 @@ body {
         }
       }
 
-      .menu-line{
+      .menu-line {
         position: relative;
         display: flex;
         top: 50%;
         right: 67%;
 
-        img{
-            width: 70%;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  main {
+    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+    height: 100%;
+
+    h1 {
+      padding-left: 5rem;
+      span {
+        opacity: 0.25;
+        margin-right: 1rem;
+      }
+    }
+
+    .app {
+      padding: 7rem 4rem 0;
+      display: flex;
+      justify-content: space-evenly;
+
+      .app__image {
+        flex: 1 1 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40%;
+
+        img {
+          width: 55%;
+        }
+      }
+
+      .app__info {
+        flex: 1 1 0px; 
+        ul {
+          list-style: none;
+          display: flex;
+          // justify-content: space-evenly;
+          // width: 50%;
+          .activeDest{
+            border-bottom: 2px solid white;
+          }
+          li{
+            margin: 0 2rem;
+            padding-bottom: 0.5rem;
+
+            &:hover{
+              cursor: pointer;
+              font-weight: 700;
+            }
+          }
+        }
+
+        h2 {
+          font-size: 100px;
+          font-family: "Bellefair", serif;
+          margin: 3rem 0 1rem;
+        }
+
+        .description {
+          font-size: 18px;
+          width: 50%;
+          padding-bottom: 2rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid gray;
+          text-align: justify;
+        }
+
+        .metrics{
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          font-family: 'Barlow Condensed', sans-serif;
+
+          span{
+            color: #D0D6F9;
+          }
+
+          h3{
+            font-size: 28px;
+            font-family: "Bellefair", serif;
+            font-weight: 400;
+            margin-top: 0.5rem;
+          }
         }
       }
     }

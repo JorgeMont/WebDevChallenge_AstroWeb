@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@100;400;700&family=Bellefair&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +7,7 @@
 body {
   background-image: url("../Assets/Images/background.png");
   background-repeat: no-repeat;
-  mix-blend-mode: screen;
   background-color: #12151f;
-  width: 100vw;
-  height: 100vh;
   background-size: cover;
   color: white;
 }
@@ -66,4 +63,77 @@ body header .header__menu .menu-line {
 }
 body header .header__menu .menu-line img {
   width: 70%;
+}
+body main {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  height: 100%;
+}
+body main h1 {
+  padding-left: 5rem;
+}
+body main h1 span {
+  opacity: 0.25;
+  margin-right: 1rem;
+}
+body main .app {
+  padding: 7rem 4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .app .app__image {
+  flex: 1 1 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+body main .app .app__image img {
+  width: 55%;
+}
+body main .app .app__info {
+  flex: 1 1 0px;
+}
+body main .app .app__info ul {
+  list-style: none;
+  display: flex;
+}
+body main .app .app__info ul .activeDest {
+  border-bottom: 2px solid white;
+}
+body main .app .app__info ul li {
+  margin: 0 2rem;
+  padding-bottom: 0.5rem;
+}
+body main .app .app__info ul li:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+body main .app .app__info h2 {
+  font-size: 100px;
+  font-family: "Bellefair", serif;
+  margin: 3rem 0 1rem;
+}
+body main .app .app__info .description {
+  font-size: 18px;
+  width: 50%;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  text-align: justify;
+}
+body main .app .app__info .metrics {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Barlow Condensed", sans-serif;
+}
+body main .app .app__info .metrics span {
+  color: #D0D6F9;
+}
+body main .app .app__info .metrics h3 {
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

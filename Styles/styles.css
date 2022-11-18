@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@100;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +9,49 @@ body {
   background-repeat: no-repeat;
   mix-blend-mode: screen;
   background-color: #12151f;
-  /* opacity: 0.25; */
   width: 100vw;
   height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  color: white;
 }
-
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 2.5rem;
+body header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
 }
-
-.header__menu img{
-    width: 2rem;
+body header .header__menu img {
+  width: 2rem;
 }
+body header .header__menu ul {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  padding: 0 5rem 0 3rem;
+  width: 50rem;
+}
+body header .header__menu ul li {
+  padding: 0 2rem;
+  font-weight: 100;
+  padding: 0rem 3rem;
+}
+body header .header__menu ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body header .header__menu ul li .tabContainer {
+  padding: 2rem 0;
+}
+body header .header__menu ul li .tabContainer a {
+  text-decoration: none;
+  color: white;
+}
+body header .header__menu ul li .tabContainer a span {
+  font-weight: 800;
+  margin-right: 5px;
+}
+body header .header__menu ul .activeTab .tabContainer {
+  border-bottom: white 3px solid;
+}/*# sourceMappingURL=styles.css.map */

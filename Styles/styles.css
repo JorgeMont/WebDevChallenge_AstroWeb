@@ -54,4 +54,13 @@ body header .header__menu ul li .tabContainer a span {
 }
 body header .header__menu ul .activeTab .tabContainer {
   border-bottom: white 3px solid;
+}
+body header .header__menu .menu-line {
+  position: relative;
+  display: flex;
+  top: 50%;
+  right: 67%;
+}
+body header .header__menu .menu-line img {
+  width: 70%;
 }/*# sourceMappingURL=styles.css.map */

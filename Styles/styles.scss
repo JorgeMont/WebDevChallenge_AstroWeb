@@ -67,6 +67,19 @@ body {
           }
         }
       }
+
+      .menu-line{
+        position: relative;
+        display: flex;
+        // background-color: gray;
+        top: 50%;
+        right: 67%;
+        // height: 100%;
+
+        img{
+            width: 70%;
+        }
+      }
     }
   }
 }

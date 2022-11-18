@@ -1,4 +1,3 @@
-console.log('Hi !');
 let destinations;
 let currentDest;
 
@@ -13,12 +12,8 @@ const fetchData = async () => {
         const res = await fetch('../Data/data.json');
         const data = await res.json();
         destinations = data.destinations;
-        console.log(destinations);
-
-        // currentDest = destinations[0];
 
         paintInfo(0);
-        //
     }
     catch(error){
         console.log(`No se pudo cargar el destino: ${error}`);
@@ -60,5 +55,3 @@ document.addEventListener("DOMContentLoaded", () => {
     tabTitan.classList.add("activeDest");
     paintInfo(3);
   });
-
-  console.log(tabContainer);

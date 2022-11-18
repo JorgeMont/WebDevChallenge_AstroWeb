@@ -19,18 +19,21 @@ body header {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
 }
+body header .header__logo {
+  display: flex;
+  align-items: center;
+}
 body header .header__logo:hover {
   cursor: pointer;
 }
-body header .header__menu img {
-  width: 2rem;
+body header .header__burgerMenu {
+  display: none;
 }
 body header .header__menu ul {
   list-style: none;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  padding: 0 5rem 0 3rem;
-  width: 50rem;
+  padding: 0 0 0 3rem;
 }
 body header .header__menu ul li {
   padding: 0 2rem;
@@ -54,15 +57,6 @@ body header .header__menu ul li .tabContainer a span {
 }
 body header .header__menu ul .activeTab .tabContainer {
   border-bottom: white 3px solid;
-}
-body header .header__menu .menu-line {
-  position: relative;
-  display: flex;
-  top: 50%;
-  right: 67%;
-}
-body header .header__menu .menu-line img {
-  width: 70%;
 }
 body main {
   font-family: "Barlow Condensed", sans-serif;
@@ -140,6 +134,24 @@ body main .app .app__info .metrics h3 {
 }
 
 @media (max-width: 1080px) {
+  body header .header__menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 28rem;
+    padding: 0;
+  }
+  body header .header__menu ul li {
+    padding: 0;
+  }
+  body header .header__menu .menu-line {
+    position: relative;
+    right: 1rem;
+    background-color: red;
+    top: 0;
+  }
+  body header .header__menu .menu-line img {
+    width: 1rem;
+  }
   body main .app .app__info .description {
     width: 80%;
   }
@@ -148,6 +160,13 @@ body main .app .app__info .metrics h3 {
   }
 }
 @media (max-width: 800px) {
+  body header .header__menu {
+    display: none;
+  }
+  body header .header__burgerMenu {
+    display: block;
+    margin-right: 1rem;
+  }
   body main h1 {
     text-align: center;
     padding-left: 0;

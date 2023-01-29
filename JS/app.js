@@ -25,6 +25,9 @@ const paintInfo = (id) => {
     document
     .querySelector(".app .app__image img")
     .setAttribute("src", currentDest.images.svg);
+    document
+    .querySelector(".app .app__image img")
+    .setAttribute("alt", currentDest.name);
     document.querySelector(".app .app__info h2").innerHTML = currentDest.name.toUpperCase();
     document.querySelector(".app .app__info .description").innerHTML = currentDest.description;
     document.querySelector(".app .app__info .metrics .metrics__distance h3").innerHTML = currentDest.distance.toUpperCase();
